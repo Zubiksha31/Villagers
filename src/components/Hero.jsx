@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white text-gray-900 pt-14 overflow-hidden">
+    <div className=" min-h-screen bg-gradient-to-b from-emerald-50 to-white text-gray-900 pt-14 overflow-hidden">
 
       {/* --- HERO SECTION --- */}
       <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
@@ -13,10 +13,10 @@ const Home = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl font-extrabold leading-tight">
-            Welcome to <span className="text-emerald-700">Villagers</span>
+            Welcome to <span className="text-emerald-700">Villa Globe</span>
           </h1>
           <p className="mt-4 text-gray-700 text-lg leading-relaxed">
-            Incorporated in <b>2017</b>, <b>Villagers</b> is an Indian
+            Incorporated in <b>2019</b>, <b>Villagers Global</b> is an Indian
             <b> eco-friendly products</b> manufacturing company driven by a
             vision to bring sustainability into daily life. Our mission is to
             help people live better while preserving nature for the next
@@ -69,7 +69,7 @@ const Home = () => {
           <b> “To help people live better and sustain our planet.”</b>
         </p>
         <p className="max-w-3xl mx-auto text-gray-600 mt-4">
-          Our founder, <b>Mr. E. Eswaramoorthy</b>, established Villagers with a
+          We established Villagers Global with a
           vision — <i>“To make a difference to our routine life via sustainable
           sources.”</i>
         </p>
@@ -83,7 +83,7 @@ const Home = () => {
         transition={{ duration: 0.8 }}
       >
         <h2 className="text-4xl font-bold text-emerald-700 mb-6">
-          Why Villagers?
+          Why Villa Globe?
         </h2>
         <p className="max-w-3xl mx-auto text-gray-700 leading-relaxed">
           Buying a single eco-friendly product might not change the world
