@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBagShopping, faShare } from "@fortawesome/free-solid-svg-icons";
+import ElectricBorder from "./ElectricBorder";
+
 
 // Product images
 import Bowl from "../assets/Bowlwithoutbase.png";
@@ -42,7 +44,12 @@ const products = [
   { id: 14, title: "Stick Ladle", price: "₹240.00", img: Stick },
   { id: 15, title: "Pen Stand", price: "₹150.00", img: Penstand },
   { id: 16, title: "Plant Holder", price: "₹500.00", img: PlantHolder },
-  { id: 17, title: "Shell Bird Feeder", price: "₹300.00", img: ShellBirdfeeder },
+  {
+    id: 17,
+    title: "Shell Bird Feeder",
+    price: "₹300.00",
+    img: ShellBirdfeeder,
+  },
   { id: 18, title: "Soap Tray", price: "₹120.00", img: Soaptry },
   { id: 19, title: "Soup Bowl", price: "₹210.00", img: Soupbowl },
   { id: 20, title: "Wave Stick Ladles", price: "₹270.00", img: Wavystick },
@@ -58,13 +65,19 @@ const Products = () => {
   const handleBuy = (product) => {
     const productUrl = `${window.location.origin}/materials/${product.id}`;
     const message = `🌿 Hello! I'm interested in buying this product:\n\n*${product.title}*\nPrice: ${product.price}\n\n${productUrl}`;
-    window.open(`https://wa.me/919092117788?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(
+      `https://wa.me/919092117788?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
   };
 
   const handleShare = (product) => {
     const productUrl = `${window.location.origin}/materials/${product.id}`;
     const shareMessage = `🌿 Check out this eco-friendly product!\n\n*${product.title}*\nPrice: ${product.price}\n\n${productUrl}\n\nShop sustainable, live green! 🌱`;
-    window.open(`https://wa.me/?text=${encodeURIComponent(shareMessage)}`, "_blank");
+    window.open(
+      `https://wa.me/?text=${encodeURIComponent(shareMessage)}`,
+      "_blank"
+    );
   };
 
   return (
@@ -73,13 +86,21 @@ const Products = () => {
         <h1 className="text-3xl font-bold text-emerald-700 text-center sm:text-left">
           All Eco Products
         </h1>
-        <input
-          type="text"
-          placeholder="Search products..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="border border-emerald-400 px-3 py-2 rounded-md outline-none focus:ring-2 focus:ring-emerald-500 w-full sm:w-64"
-        />
+        <ElectricBorder
+          color="#0f766e" // dark teal for the electric effect
+          speed={0}
+          chaos={0.2}
+          thickness={3}
+          style={{ borderRadius: 25 }}
+        >
+          <input
+            type="text"
+            placeholder="Search products..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="border-none px-3 py-3 rounded-md outline-none w-full sm:w-64 focus:ring-0"
+          />
+        </ElectricBorder>
       </header>
 
       <main className="max-w-6xl mx-auto py-12">
@@ -104,8 +125,12 @@ const Products = () => {
 
                 <div className="p-4 text-center rounded-lg shadow-md">
                   <h3 className="font-semibold">{p.title}</h3>
-                  <p className="text-gray-500 text-sm mt-1">Eco-friendly product 🌱</p>
-                  <p className="text-emerald-700 font-bold mt-1">{p.price} / piece</p>
+                  <p className="text-gray-500 text-sm mt-1">
+                    Eco-friendly product 🌱
+                  </p>
+                  <p className="text-emerald-700 font-bold mt-1">
+                    {p.price} / piece
+                  </p>
 
                   <div className="flex flex-col sm:flex-row justify-center gap-2 mt-3">
                     <button

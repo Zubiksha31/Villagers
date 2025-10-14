@@ -1,8 +1,18 @@
 import React from "react";
+import FallingLeaf from "./FallingLeaf";
+
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-emerald-50 pt-28 text-gray-900">
+      {[...Array(20)].map((_, i) => (
+        <FallingLeaf
+          key={i}
+          delay={Math.random() * 20}
+          size={0.8 + Math.random() * 1} // smaller leaves
+          left={`${Math.random() * 100}%`}
+        />
+      ))}
       <div className="max-w-3xl mx-auto px-6 py-12 text-center">
         <h1 className="text-3xl font-bold text-emerald-700 mb-4">Contact Us</h1>
         <p className="text-gray-700 mb-8">

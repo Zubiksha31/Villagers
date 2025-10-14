@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpload, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 
+
 import Bowl from "../assets/Bowlwithoutbase.png";
 import Coffeecup from "../assets/Coffeecup.png";
 import Juicecup from "../assets/Juicecup.png";

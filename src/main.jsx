@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer";
 
 
 createRoot(document.getElementById("root")).render(
@@ -12,6 +13,7 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Navbar />
       <App />
+      <Footer/>
     </BrowserRouter>
   </StrictMode>
 );
