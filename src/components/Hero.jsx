@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import BlurText from "./BlurText";
 import { Leaf, Award, Sparkles } from "lucide-react";
 import FallingLeaf from "./FallingLeaf";
+import Homepageimage from "../assets/Homepageimage.png";
+import HomePage from "../assets/HomePage.png";
 
 const handleAnimationComplete = () => {
   console.log("Animation completed!");
@@ -29,14 +31,14 @@ const Home = () => {
           left={`${Math.random() * 100}%`}
         />
       ))}
-  
-      <section className="relative w-full h-screen px-28 py-20 grid md:grid-cols-2 gap-12 items-center bg-gradient-to-r from-emerald-50 to-white overflow-hidden">
+
+      <section className="relative w-full min-h-screen px-6 sm:px-12 md:px-28 py-12 sm:py-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center bg-gradient-to-r from-emerald-50 to-white overflow-hidden">
         {/* Falling Leaves (behind content) */}
         {[...Array(10)].map((_, i) => (
           <FallingLeaf
             key={i}
             delay={Math.random() * 20}
-            size={0.8 + Math.random() * 1} // small leaves
+            size={0.6 + Math.random() * 1} // smaller leaves on mobile
             left={`${Math.random() * 100}%`}
           />
         ))}
@@ -46,24 +48,24 @@ const Home = () => {
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9 }}
-          className="relative z-10"
+          className="relative z-10  md:text-left"
         >
           <h1>
-            <div className="flex flex-col md:flex-col">
-              <div className="flex flex-wrap gap-3 md:gap-5">
+            <div className="flex flex-col  md:items-start">
+              <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-5  md:justify-start">
                 <BlurText
                   text="Welcome to"
                   delay={150}
                   animateBy="chars"
                   direction="top"
-                  className="text-5xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-800"
+                  className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-gray-800"
                 />
                 <BlurText
                   text="Villa"
                   delay={250}
                   animateBy="chars"
                   direction="top"
-                  className="text-5xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-emerald-600"
+                  className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-emerald-600"
                 />
               </div>
               <div className="mt-2">
@@ -72,13 +74,13 @@ const Home = () => {
                   delay={350}
                   animateBy="chars"
                   direction="top"
-                  className="text-5xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-emerald-700"
+                  className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-emerald-700"
                 />
               </div>
             </div>
           </h1>
 
-          <p className="mt-6 text-gray-700 text-lg leading-relaxed max-w-xl">
+          <p className="mt-4 sm:mt-6 text-gray-700 text-base sm:text-lg leading-relaxed max-w-full md:max-w-xl">
             Incorporated in <b>2019</b>, <b>Villagers Global</b> is an Indian
             eco-friendly products manufacturing company driven by a vision to
             bring <b>sustainability</b> into daily life. Our mission is to help
@@ -86,20 +88,20 @@ const Home = () => {
             by avoiding plastic.
           </p>
 
-          <div className="mt-8 p-5 bg-emerald-50 border border-emerald-200 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 max-w-md">
-            <h3 className="font-semibold text-emerald-700 text-lg flex items-center gap-2">
+          <div className="mt-6 sm:mt-8 p-4 sm:p-5 bg-emerald-50 border border-emerald-200 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 max-w-full sm:max-w-md mx-auto md:mx-0">
+            <h3 className="font-semibold text-emerald-700 text-base sm:text-lg flex items-center gap-2">
               🌿 Latest Offer!
             </h3>
-            <p className="text-gray-700 mt-1">
+            <p className="text-gray-700 mt-1 text-sm sm:text-base">
               Get <b>15% OFF</b> on all bamboo and coconut shell products —
               Limited Time Offer!
             </p>
           </div>
 
-          <motion.div whileHover={{ scale: 1.05 }} className="mt-8">
+          <motion.div whileHover={{ scale: 1.05 }} className="mt-6 sm:mt-8">
             <a
               href="/materials"
-              className="inline-block px-8 py-4 bg-emerald-600 text-white font-medium rounded-xl shadow-xl hover:bg-emerald-700 transition-all duration-300"
+              className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-emerald-600 text-white font-medium rounded-xl shadow-xl hover:bg-emerald-700 transition-all duration-300 text-sm sm:text-base"
             >
               Explore Our Products
             </a>
@@ -111,16 +113,19 @@ const Home = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="flex justify-center relative z-10"
+          className="flex justify-center relative z-10 mt-8 md:mt-0"
         >
           <img
-            src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzA4fDB8MHwxfGFsbHwxfHxuYXR1cmFsJTIwbGVhZnxlbnwwfHx8fDE2OTA2NjY3MzY&ixlib=rb-4.0.3&q=80&w=800"
+            src={HomePage}
             alt="eco products"
-            className="rounded-3xl w-full max-w-md shadow-2xl hover:scale-105 transition-transform duration-500"
+            className="rounded-3xl w-full max-w-xs sm:max-w-sm md:max-w-md shadow-2xl hover:scale-105 transition-transform duration-500"
           />
-          {/* Floating Leaf Accent */}
-          <div className="absolute -top-8 left-10 w-16 h-16 bg-emerald-200 rounded-full rotate-45 animate-pulse opacity-70"></div>
-          <div className="absolute -bottom-10 right-1 w-24 h-24 bg-emerald-300 rounded-full rotate-12 animate-pulse opacity-50"></div>
+
+          {/* Floating Leaf Accent - Top Left */}
+          <div className="absolute -top-4 left-10 w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-emerald-200 rounded-full rotate-45 animate-pulse opacity-70"></div>
+
+          {/* Floating Leaf Accent - Bottom Right */}
+          <div className="absolute -bottom-6 right-2 w-12 h-12 sm:w-16 sm:h-20 md:w-24 md:h-24 bg-emerald-300 rounded-full rotate-12 animate-pulse opacity-50"></div>
         </motion.div>
       </section>
 
@@ -181,7 +186,7 @@ const Home = () => {
             We established{" "}
             <span className="font-semibold text-green-700">
               Villagers Global
-            </span>
+            </span>{" "}
             with a vision — “To make a difference to our routine life via
             sustainable sources.”
           </motion.p>
