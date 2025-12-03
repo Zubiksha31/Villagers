@@ -75,15 +75,6 @@ const Home = () => {
             by avoiding plastic.
           </p>
 
-          <div className="mt-6 sm:mt-8 p-4 sm:p-5 bg-emerald-50 border border-emerald-200 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 max-w-full sm:max-w-md mx-auto md:mx-0">
-            <h3 className="font-semibold text-emerald-700 text-base sm:text-lg flex items-center gap-2">
-              🌿 Latest Offer!
-            </h3>
-            <p className="text-gray-700 mt-1 text-sm sm:text-base">
-              Get <b>15% OFF</b> on all bamboo and coconut shell products —
-              Limited Time Offer!
-            </p>
-          </div>
 
           <motion.div whileHover={{ scale: 1.05 }} className="mt-6 sm:mt-8">
             <a
