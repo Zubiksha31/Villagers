@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import GooeyNav from "./GooeyNav";
+import Logo from "../assets/Villagers-Logo-removebg-preview.png"
 
 
 const items = [
@@ -26,7 +27,7 @@ const Navbar = () => {
               <div className="rounded-full w-[55px] h-[55px] flex items-center justify-center bg-white shadow-lg shadow-emerald-200/60 hover:shadow-2xl hover:shadow-emerald-300/70 transition-all duration-500 ease-in-out cursor-pointer ring-2 ring-emerald-100 hover:ring-4 hover:ring-emerald-200">
                 <img
                   className="w-[45px] hover:scale-110 transition-transform duration-300"
-                  src="/VillagersLogo.png"
+                  src={Logo}
                   alt="Villagers Logo"
                 />
               </div>

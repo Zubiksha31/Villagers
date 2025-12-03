@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { Facebook, Instagram, Linkedin, Mail, Phone, Leaf } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import React from "react";
-import VillagersLogo from "/VillagersLogo.png"
+import Logo from "../assets/Villagers-Logo-removebg-preview.png"
 
 const Footer = () => {
   return (
@@ -19,12 +19,8 @@ const Footer = () => {
         {/* Logo & About */}
         <div>
           <div className="flex items-center gap-2 mb-4">
-          <img src={VillagersLogo} alt="Villagers Global Logo" className="w-8 h-8" />
-<<<<<<< HEAD
+            <img src={Logo} alt="Villagers Global Logo" className="w-8 h-8" />
             <h2 className="text-2xl font-bold text-white">Villagers Glob</h2>
-=======
-            <h2 className="text-2xl font-bold text-white">Villagers Global</h2>
->>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
           </div>
           <p className="text-gray-300 leading-relaxed text-sm">
             Building a sustainable tomorrow with every eco-friendly choice you make.  
@@ -39,11 +35,7 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-gray-300 text-sm">
             <li><a href="#about" className="hover:text-white transition">About Us</a></li>
-<<<<<<< HEAD
             <li><a href="#why" className="hover:text-white transition">Why Villa Glob</a></li>
-=======
-            <li><a href="#why" className="hover:text-white transition">Why Villa Globe</a></li>
->>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
             <li><a href="#awards" className="hover:text-white transition">Awards & Values</a></li>
             <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
           </ul>
@@ -104,7 +96,7 @@ const Footer = () => {
         transition={{ delay: 0.3, duration: 1 }}
         className="mt-16 text-center border-t border-emerald-700 pt-6 text-sm text-gray-400"
       >
-        © {new Date().getFullYear()} <span className="text-lime-300 font-medium">Villagers Global</span>.  
+        © {new Date().getFullYear()} <span className="text-lime-300 font-medium">Villagers Glob</span>.  
         All Rights Reserved 🌿
       </motion.div>
     </footer>
@@ -112,3 +104,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

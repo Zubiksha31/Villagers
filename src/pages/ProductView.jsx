@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpload, faTrash } from "@fortawesome/free-solid-svg-icons";
 
-<<<<<<< HEAD
+
 import Bowl from "../assets/Bowl1.jpg";
 import ComboPack from "../assets/WineCup.jpg";
 import Icecreambowlround from "../assets/IceCreamBowlRound-.jpg";
@@ -40,59 +40,59 @@ export const images = {
   Rawshellround,           // Raw Shell Round
   Rawshelloval,            // Raw Shell Oval
   Matfinishjumbobowl       // Mat Finish Jumbo Bowl
-=======
-
-
-import Bowl from "../assets/Bowlwithoutbase.png";
-import Coffeecup from "../assets/Coffeecup.png";
-import Juicecup from "../assets/Juicecup.png";
-import Payasacup from "../assets/PayasaCup.png";
-import Bowlone from "../assets/Bowl-one.jpg";
-import Bowltwo from "../assets/Bowl-two.jpg";
-import Bowlthree from "../assets/Bowl-three.jpg";
-import Bowlwithbase from "../assets/BowlwithBase.png";
-import Candleholder from "../assets/Candleholder.png";
-import CoirBirdnest from "../assets/Coir-BirdNest.png";
-import Jar from "../assets/Jar.png";
-import Jumblebowl from "../assets/Jumbobowl.png";
-import Ladles from "../assets/Ladles-two.png";
-import Stick from "../assets/Ladles.png";
-import Penstand from "../assets/PenStand.png";
-import PlantHolder from "../assets/PlantHolderimage.png";
-import ServingLadles from "../assets/Servingladles.png";
-import ShellBirdfeeder from "../assets/Shell-BirdFeeder.png";
-import Soaptry from "../assets/SoapTray.png";
-import Soupbowl from "../assets/SoupBowl.png";
-import Wavystick from "../assets/Wavystickladles.png";
-
-const images = {
-  Bowl,
-  Coffeecup,
-  Juicecup,
-  Payasacup,
-  Bowlone,
-  Bowltwo,
-  Bowlthree,
-  Bowlwithbase,
-  Candleholder,
-  CoirBirdnest,
-  Jar,
-  Jumblebowl,
-  Ladles,
-  Stick,
-  Penstand,
-  PlantHolder,
-  ServingLadles,
-  ShellBirdfeeder,
-  Soaptry,
-  Soupbowl,
-  Wavystick,
->>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
 };
 
 
+// import Bowl from "../assets/Bowlwithoutbase.png";
+// import Coffeecup from "../assets/Coffeecup.png";
+// import Juicecup from "../assets/Juicecup.png";
+// import Payasacup from "../assets/PayasaCup.png";
+// import Bowlone from "../assets/Bowl-one.jpg";
+// import Bowltwo from "../assets/Bowl-two.jpg";
+// import Bowlthree from "../assets/Bowl-three.jpg";
+// import Bowlwithbase from "../assets/BowlwithBase.png";
+// import Candleholder from "../assets/Candleholder.png";
+// import CoirBirdnest from "../assets/Coir-BirdNest.png";
+// import Jar from "../assets/Jar.png";
+// import Jumblebowl from "../assets/Jumbobowl.png";
+// import Ladles from "../assets/Ladles-two.png";
+// import Stick from "../assets/Ladles.png";
+// import Penstand from "../assets/PenStand.png";
+// import PlantHolder from "../assets/PlantHolderimage.png";
+// import ServingLadles from "../assets/Servingladles.png";
+// import ShellBirdfeeder from "../assets/Shell-BirdFeeder.png";
+// import Soaptry from "../assets/SoapTray.png";
+// import Soupbowl from "../assets/SoupBowl.png";
+// import Wavystick from "../assets/Wavystickladles.png";
+
+// const images = {
+//   Bowl,
+//   Coffeecup,
+//   Juicecup,
+//   Payasacup,
+//   Bowlone,
+//   Bowltwo,
+//   Bowlthree,
+//   Bowlwithbase,
+//   Candleholder,
+//   CoirBirdnest,
+//   Jar,
+//   Jumblebowl,
+//   Ladles,
+//   Stick,
+//   Penstand,
+//   PlantHolder,
+//   ServingLadles,
+//   ShellBirdfeeder,
+//   Soaptry,
+//   Soupbowl,
+//   Wavystick,
+// >>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
+// };
+
+
 const products = [
-<<<<<<< HEAD
+
   { id: 1, title: "Ice Cream Oval Cup", price: 18, category: "Kitchen & Dining", img: Bowl, featured: true },
 
   { id: 2, title: "Combo Pack (Wine Cup, Round Dessert Cup, Oval Bowl, Pen Stand)", 
@@ -130,31 +130,30 @@ const products = [
 ];
 
 
-=======
-  { id: 1, title: "Bowl without Base", price: "₹200.00", img: images.Bowl },
-  { id: 2, title: "Coffee Cup", price: "₹350.00", img: images.Coffeecup },
-  { id: 3, title: "Juice Cup", price: "₹250.00", img: images.Juicecup },
-  { id: 4, title: "Payasa Cup", price: "₹180.00", img: images.Payasacup },
-  { id: 5, title: "Bowl One", price: "₹300.00", img: images.Bowlone },
-  { id: 6, title: "Bowl Two", price: "₹320.00", img: images.Bowltwo },
-  { id: 7, title: "Bowl Three", price: "₹340.00", img: images.Bowlthree },
-  { id: 8, title: "Bowl with Base", price: "₹280.00", img: images.Bowlwithbase },
-  { id: 9, title: "Candle Holder", price: "₹200.00", img: images.Candleholder },
-  { id: 10, title: "Coir Bird Nest", price: "₹260.00", img: images.CoirBirdnest },
-  { id: 11, title: "Jar", price: "₹210.00", img: images.Jar },
-  { id: 12, title: "Jumbo Bowl", price: "₹400.00", img: images.Jumblebowl },
-  { id: 13, title: "Serving Ladles", price: "₹230.00", img: images.Ladles },
-  { id: 14, title: "Stick Ladle", price: "₹240.00", img: images.Stick },
-  { id: 15, title: "Pen Stand", price: "₹150.00", img: images.Penstand },
-  { id: 16, title: "Plant Holder", price: "₹500.00", img: images.PlantHolder },
-  { id: 17, title: "Shell Bird Feeder", price: "₹300.00", img: images.ShellBirdfeeder },
-  { id: 18, title: "Soap Tray", price: "₹120.00", img: images.Soaptry },
-  { id: 19, title: "Soup Bowl", price: "₹210.00", img: images.Soupbowl },
-  { id: 20, title: "Wave Stick Ladles", price: "₹270.00", img: images.Wavystick },
-  { id: 21, title: "Serving Ladles", price: "₹300.00", img: images.ServingLadles },
-];
+//   { id: 1, title: "Bowl without Base", price: "₹200.00", img: images.Bowl },
+//   { id: 2, title: "Coffee Cup", price: "₹350.00", img: images.Coffeecup },
+//   { id: 3, title: "Juice Cup", price: "₹250.00", img: images.Juicecup },
+//   { id: 4, title: "Payasa Cup", price: "₹180.00", img: images.Payasacup },
+//   { id: 5, title: "Bowl One", price: "₹300.00", img: images.Bowlone },
+//   { id: 6, title: "Bowl Two", price: "₹320.00", img: images.Bowltwo },
+//   { id: 7, title: "Bowl Three", price: "₹340.00", img: images.Bowlthree },
+//   { id: 8, title: "Bowl with Base", price: "₹280.00", img: images.Bowlwithbase },
+//   { id: 9, title: "Candle Holder", price: "₹200.00", img: images.Candleholder },
+//   { id: 10, title: "Coir Bird Nest", price: "₹260.00", img: images.CoirBirdnest },
+//   { id: 11, title: "Jar", price: "₹210.00", img: images.Jar },
+//   { id: 12, title: "Jumbo Bowl", price: "₹400.00", img: images.Jumblebowl },
+//   { id: 13, title: "Serving Ladles", price: "₹230.00", img: images.Ladles },
+//   { id: 14, title: "Stick Ladle", price: "₹240.00", img: images.Stick },
+//   { id: 15, title: "Pen Stand", price: "₹150.00", img: images.Penstand },
+//   { id: 16, title: "Plant Holder", price: "₹500.00", img: images.PlantHolder },
+//   { id: 17, title: "Shell Bird Feeder", price: "₹300.00", img: images.ShellBirdfeeder },
+//   { id: 18, title: "Soap Tray", price: "₹120.00", img: images.Soaptry },
+//   { id: 19, title: "Soup Bowl", price: "₹210.00", img: images.Soupbowl },
+//   { id: 20, title: "Wave Stick Ladles", price: "₹270.00", img: images.Wavystick },
+//   { id: 21, title: "Serving Ladles", price: "₹300.00", img: images.ServingLadles },
+// ];
 
->>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
+// >>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
 const ProductView = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === Number(id));
@@ -335,4 +334,4 @@ export default ProductView;
 
 
 
-ProductView.jsx
+

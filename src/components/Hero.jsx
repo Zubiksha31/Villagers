@@ -3,60 +3,43 @@ import { motion } from "framer-motion";
 import BlurText from "./BlurText";
 import { Leaf, Award, Sparkles } from "lucide-react";
 import FallingLeaf from "./FallingLeaf";
-<<<<<<< HEAD
-// import Homepageimage from "../assets/Homepageimage.png";
-=======
-import Homepageimage from "../assets/Homepageimage.png";
->>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
 import HomePage from "../assets/HomePage.png";
-
-const handleAnimationComplete = () => {
-  console.log("Animation completed!");
-};
 
 const Home = () => {
   return (
-    <div className=" min-h-screen bg-gradient-to-b from-emerald-50 to-white text-gray-900 pt-14 relative overflow-hidden">
-      {/* <FallingLeaf delay={0} size={6} left="10%" />
-      <FallingLeaf delay={2} size={8} left="25%" />
-      <FallingLeaf delay={4} size={5} left="40%" />
-      <FallingLeaf delay={1} size={7} left="55%" />
-      <FallingLeaf delay={3} size={6} left="70%" />
-      <FallingLeaf delay={5} size={8} left="85%" /> */}
-      {/* --- FALLING LEAVES --- */}
-      {/* Small falling leaves in the background */}
-      {/* Small, dim falling leaves in the background */}
-      {/* Small, interactive, dim falling leaves */}
+    <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white text-gray-900 pt-14 relative overflow-hidden">
+      {/* Falling Leaves Background */}
       {[...Array(20)].map((_, i) => (
         <FallingLeaf
           key={i}
           delay={Math.random() * 20}
-          size={0.8 + Math.random() * 1} // smaller leaves
+          size={0.8 + Math.random() * 1}
           left={`${Math.random() * 100}%`}
         />
       ))}
 
+      {/* HERO SECTION */}
       <section className="relative w-full min-h-screen px-6 sm:px-12 md:px-28 py-12 sm:py-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center bg-gradient-to-r from-emerald-50 to-white overflow-hidden">
-        {/* Falling Leaves (behind content) */}
+        {/* Additional Falling Leaves */}
         {[...Array(10)].map((_, i) => (
           <FallingLeaf
             key={i}
             delay={Math.random() * 20}
-            size={0.6 + Math.random() * 1} // smaller leaves on mobile
+            size={0.6 + Math.random() * 1}
             left={`${Math.random() * 100}%`}
           />
         ))}
 
-        {/* Text Content */}
+        {/* TEXT CONTENT */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9 }}
-          className="relative z-10  md:text-left"
+          className="relative z-10 md:text-left"
         >
           <h1>
-            <div className="flex flex-col  md:items-start">
-              <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-5  md:justify-start">
+            <div className="flex flex-col md:items-start">
+              <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-5 md:justify-start">
                 <BlurText
                   text="Welcome to"
                   delay={150}
@@ -74,11 +57,7 @@ const Home = () => {
               </div>
               <div className="mt-2">
                 <BlurText
-<<<<<<< HEAD
                   text="Glob"
-=======
-                  text="Globe"
->>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
                   delay={350}
                   animateBy="chars"
                   direction="top"
@@ -89,11 +68,7 @@ const Home = () => {
           </h1>
 
           <p className="mt-4 sm:mt-6 text-gray-700 text-base sm:text-lg leading-relaxed max-w-full md:max-w-xl">
-<<<<<<< HEAD
             Incorporated in <b>2019</b>, <b>Villagers Glob</b> is an Indian
-=======
-            Incorporated in <b>2019</b>, <b>Villagers Global</b> is an Indian
->>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
             eco-friendly products manufacturing company driven by a vision to
             bring <b>sustainability</b> into daily life. Our mission is to help
             people live better while preserving nature for the next generation
@@ -120,7 +95,7 @@ const Home = () => {
           </motion.div>
         </motion.div>
 
-        {/* Image */}
+        {/* IMAGE */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -141,8 +116,7 @@ const Home = () => {
         </motion.div>
       </section>
 
-      {/* --- ABOUT US --- */}
-
+      {/* ABOUT US SECTION */}
       <motion.section
         className="relative bg-gradient-to-b from-green-50 via-white to-green-50 py-24 px-6 text-center overflow-hidden"
         initial={{ opacity: 0, y: 40 }}
@@ -181,11 +155,11 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 1 }}
           >
-            We aim to achieve wellness in everyone’s life and preserve the
+            We aim to achieve wellness in everyone's life and preserve the
             environment through sustainable practices. Our mission is simple:
             <span className="font-semibold text-green-700">
               {" "}
-              “To help people live better and sustain our planet.”
+              "To help people live better and sustain our planet."
             </span>
           </motion.p>
 
@@ -197,14 +171,10 @@ const Home = () => {
           >
             We established{" "}
             <span className="font-semibold text-green-700">
-<<<<<<< HEAD
               Villagers Glob
-=======
-              Villagers Global
->>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
             </span>{" "}
-            with a vision — “To make a difference to our routine life via
-            sustainable sources.”
+            with a vision — "To make a difference to our routine life via
+            sustainable sources."
           </motion.p>
 
           {/* Decorative Eco Cards */}
@@ -251,8 +221,7 @@ const Home = () => {
         </div>
       </motion.section>
 
-      {/* --- WHY VILLAGERS --- */}
-
+      {/* WHY VILLAGERS SECTION */}
       <motion.section
         className="relative bg-gradient-to-b from-green-50 via-white to-green-50 py-24 px-6 overflow-hidden"
         initial={{ opacity: 0, y: 40 }}
@@ -281,11 +250,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-<<<<<<< HEAD
             Why Villa Glob?
-=======
-            Why Villa Globe?
->>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
             <span className="absolute left-1/2 -bottom-3 w-24 h-1 bg-green-400 transform -translate-x-1/2 rounded-full"></span>
           </motion.h2>
 
@@ -298,7 +263,7 @@ const Home = () => {
           >
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
               Buying a single eco-friendly product might not change the world
-              overnight, but it’s a powerful start{" "}
+              overnight, but it's a powerful start{" "}
               <span className="text-2xl">🌍</span>. We believe in creating
               meaningful impact through small, conscious actions.
             </p>
@@ -347,7 +312,7 @@ const Home = () => {
         </div>
       </motion.section>
 
-      {/* --- VALUES & ACHIEVEMENTS --- */}
+      {/* VALUES & ACHIEVEMENTS SECTION */}
       <section className="relative py-20 bg-gradient-to-b from-emerald-50 via-white to-emerald-100 overflow-hidden">
         {/* Floating Glow Elements */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
@@ -378,7 +343,7 @@ const Home = () => {
               </div>
               <p className="text-gray-700 leading-relaxed">
                 Proud winner of <b>SIBA 2019</b> for
-                <i> “Best Eco-Friendly Manufacturer in Tirupur.”</i>
+                <i> "Best Eco-Friendly Manufacturer in Tirupur."</i>
               </p>
             </motion.div>
 
@@ -418,15 +383,14 @@ const Home = () => {
                 to be
                 <b> 100% biodegradable</b> — ensuring <b>zero waste</b> and
                 complete harmony with nature. Because we believe sustainability
-                is not a trend, it’s a responsibility. 🌿
+                is not a trend, it's a responsibility. 🌿
               </p>
             </div>
           </motion.div>
         </motion.div>
       </section>
 
-      {/* --- SUSTAINABILITY SECTION --- */}
-
+      {/* SUSTAINABILITY SECTION */}
       <section className="relative overflow-hidden py-20 bg-gradient-to-b from-emerald-50 via-white to-emerald-100">
         {/* Decorative glowing eco blobs */}
         <div className="absolute top-10 left-10 w-40 h-40 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
@@ -466,7 +430,7 @@ const Home = () => {
             We believe in product designs that serve the environment, human
             health, and society without compromising quality or accessibility.
             Clean air, renewable resources, and a toxin-free planet are not
-            luxuries — they’re necessities.
+            luxuries — they're necessities.
           </p>
 
           <motion.p
@@ -496,3 +460,5 @@ const Home = () => {
 };
 
 export default Home;
+
+
