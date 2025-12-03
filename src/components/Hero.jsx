@@ -3,7 +3,11 @@ import { motion } from "framer-motion";
 import BlurText from "./BlurText";
 import { Leaf, Award, Sparkles } from "lucide-react";
 import FallingLeaf from "./FallingLeaf";
+<<<<<<< HEAD
 // import Homepageimage from "../assets/Homepageimage.png";
+=======
+import Homepageimage from "../assets/Homepageimage.png";
+>>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
 import HomePage from "../assets/HomePage.png";
 
 const handleAnimationComplete = () => {
@@ -70,7 +74,11 @@ const Home = () => {
               </div>
               <div className="mt-2">
                 <BlurText
+<<<<<<< HEAD
                   text="Glob"
+=======
+                  text="Globe"
+>>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
                   delay={350}
                   animateBy="chars"
                   direction="top"
@@ -81,7 +89,11 @@ const Home = () => {
           </h1>
 
           <p className="mt-4 sm:mt-6 text-gray-700 text-base sm:text-lg leading-relaxed max-w-full md:max-w-xl">
+<<<<<<< HEAD
             Incorporated in <b>2019</b>, <b>Villagers Glob</b> is an Indian
+=======
+            Incorporated in <b>2019</b>, <b>Villagers Global</b> is an Indian
+>>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
             eco-friendly products manufacturing company driven by a vision to
             bring <b>sustainability</b> into daily life. Our mission is to help
             people live better while preserving nature for the next generation
@@ -185,7 +197,11 @@ const Home = () => {
           >
             We established{" "}
             <span className="font-semibold text-green-700">
+<<<<<<< HEAD
               Villagers Glob
+=======
+              Villagers Global
+>>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
             </span>{" "}
             with a vision — “To make a difference to our routine life via
             sustainable sources.”
@@ -265,7 +281,11 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
+<<<<<<< HEAD
             Why Villa Glob?
+=======
+            Why Villa Globe?
+>>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
             <span className="absolute left-1/2 -bottom-3 w-24 h-1 bg-green-400 transform -translate-x-1/2 rounded-full"></span>
           </motion.h2>
 

@@ -24,5 +24,8 @@ dist-ssr
 *.sw?
 
 .vercel
+<<<<<<< HEAD
 
 .vercel
+=======
+>>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca

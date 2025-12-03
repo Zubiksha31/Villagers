@@ -1,3 +1,54 @@
+<<<<<<< HEAD
+=======
+// import React from "react";
+// import FallingLeaf from "./FallingLeaf";
+
+
+// const Contact = () => {
+//   return (
+//     <div className="min-h-screen bg-emerald-50 pt-28 text-gray-900">
+//       {[...Array(20)].map((_, i) => (
+//         <FallingLeaf
+//           key={i}
+//           delay={Math.random() * 20}
+//           size={0.8 + Math.random() * 1} // smaller leaves
+//           left={`${Math.random() * 100}%`}
+//         />
+//       ))}
+//       <div className="max-w-3xl mx-auto px-6 py-12 text-center">
+//         <h1 className="text-3xl font-bold text-emerald-700 mb-4">Contact Us</h1>
+//         <p className="text-gray-700 mb-8">
+//           Have questions or want to collaborate with us? Reach out anytime!
+//         </p>
+
+//         <div className="bg-white shadow-md rounded-xl p-6">
+//           <p className="text-gray-700">
+//             📞 <b>Phone:</b> +91 9092117788
+//           </p>
+//           <p className="mt-2 text-gray-700">
+//             📧 <b>Email:</b> Orders@villagersglobal.com
+//           </p>
+//           <p className="mt-2 text-gray-700">
+//             📍 <b>Address:</b> Coimbatore, Tamil Nadu
+//           </p>
+
+//           <a
+//             href="https://wa.me/919092117788"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="inline-block mt-6 px-5 py-3 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition"
+//           >
+//             Chat on WhatsApp
+//           </a>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Contact;
+
+>>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
 import React from "react";
 import { motion } from "framer-motion";
 import FallingLeaf from "./FallingLeaf";
@@ -6,7 +57,11 @@ const Contact = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-b from-emerald-50 to-white overflow-hidden pt-24">
       {/* Background Animated Shapes */}
+<<<<<<< HEAD
       <motion.div 
+=======
+      <motion.div
+>>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         className="absolute -top-16 -left-10 w-32 h-32 bg-emerald-200 rounded-full opacity-40"

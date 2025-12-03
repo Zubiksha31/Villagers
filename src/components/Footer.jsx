@@ -20,7 +20,11 @@ const Footer = () => {
         <div>
           <div className="flex items-center gap-2 mb-4">
           <img src={VillagersLogo} alt="Villagers Global Logo" className="w-8 h-8" />
+<<<<<<< HEAD
             <h2 className="text-2xl font-bold text-white">Villagers Glob</h2>
+=======
+            <h2 className="text-2xl font-bold text-white">Villagers Global</h2>
+>>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
           </div>
           <p className="text-gray-300 leading-relaxed text-sm">
             Building a sustainable tomorrow with every eco-friendly choice you make.  
@@ -35,7 +39,11 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-gray-300 text-sm">
             <li><a href="#about" className="hover:text-white transition">About Us</a></li>
+<<<<<<< HEAD
             <li><a href="#why" className="hover:text-white transition">Why Villa Glob</a></li>
+=======
+            <li><a href="#why" className="hover:text-white transition">Why Villa Globe</a></li>
+>>>>>>> 6a21724c88f19eaf173165ac0b1f1c86f37db4ca
             <li><a href="#awards" className="hover:text-white transition">Awards & Values</a></li>
             <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
           </ul>
