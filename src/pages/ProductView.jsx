@@ -3,119 +3,80 @@ import { useParams, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpload, faTrash } from "@fortawesome/free-solid-svg-icons";
 
-
-
 import Bowl from "../assets/Bowl1.jpg";
-import Coffeecup from "../assets/Bowl2.jpg";
-import Juicecup from "../assets/Bowl3.jpg";
-import Payasacup from "../assets/Bowl4.jpg";
-import Bowlone from "../assets/Bowl5.jpg";
-import Bowltwo from "../assets/Bowl6.jpg";
-import Bowlthree from "../assets/Bowl7.jpg";
-import Bowlwithbase from "../assets/Bowl8.jpg";
-import Candleholder from "../assets/Bowl9.jpg";
-import CoirBirdnest from "../assets/Bowl10.jpg";
-import Jar from "../assets/Bowl11.jpg";
-import Jumblebowl from "../assets/Bowl12.jpg";
-import Ladles from "../assets/Bowl13.jpg";
-import Stick from "../assets/Bowl14.jpg";
-import Penstand from "../assets/Bowl15.jpg";
-import PlantHolder from "../assets/Bowl16.jpg";
-import ShellBirdfeeder from "../assets/Bowl17.jpg";
-import Soaptry from "../assets/Bowl18.jpg";
-import Soupbowl from "../assets/Bowl19.jpg";
-import BowlTwenty from "../assets/Bowl20.jpg";
-import BowlTwentyone from "../assets/Bowl21.jpg";
-import BowlTwentyTwo from "../assets/Bowl22.jpg";
-import BowlTwentyThree from "../assets/Bowl23.jpg";
-import BowlTwentyFour from "../assets/Bowl24.jpg";
-import BowlTwentyFive from "../assets/Bowl25.jpg";
-import BowlTwentySix from "../assets/Bowl26.jpg";
-import BowlTwentySeven from "../assets/Bowl27.jpg";
-import BowlTwentyEight from "../assets/Bowl28.jpg";
-import BowlTwentyNine from "../assets/Bowl29.jpg";
-import BowlThirty from "../assets/Bowl30.jpg";
-import BowlThirtyone from "../assets/Bowl31.jpg";
-import BowlThirtyTwo from "../assets/Bowl32.jpg";
-import BowlThirtyThree from "../assets/Bowl33.jpg";
-import BowlThirtyFour from "../assets/Bowl34.jpg";
-import BowlThirtyFive from "../assets/Bowl35.jpg";
+import ComboPack from "../assets/WineCup.jpg";
+import Icecreambowlround from "../assets/IceCreamBowlRound-.jpg";
+import Roundbowlpolished from "../assets/RoundBowlPolished.jpg";
+import Rawpenstand from "../assets/RawPenStand.jpg";
+import Roundbowlsetpolished from "../assets/RoundBowlSetPolished.jpg";
+import Icecreamovalcups from "../assets/IceCreamOvalCups.jpg";
+import Ovalpolishedbowl from "../assets/OvalPolishedBowl.jpg";
+import Snackbowlwithscoop from "../assets/SnackBowlwithScoop.jpg";
+import OvalGlossybowlset from "../assets/OvalGlossyBowlSet.jpg";
+import Laddle from "../assets/Laddle.jpg";
+import Miniteacup from "../assets/MiniTeaCup.jpg";
+import DesertBowlWithScoop from "../assets/DesertBowlWithScoop.jpg";
+import Rawshellteacup from "../assets/Rawshellteacup.jpg";
+import Rawshellround from "../assets/Rawshellround.jpg";
+import Rawshelloval from "../assets/RawShellOval.jpg";
+import Matfinishjumbobowl from "../assets/Matfinishjumbobowl.jpg";
 
 export const images = {
-  Bowl,
-  Coffeecup,
-  Juicecup,
-  Payasacup,
-  Bowlone,
-  Bowltwo,
-  Bowlthree,
-  Bowlwithbase,
-  Candleholder,
-  CoirBirdnest,
-  Jar,
-  Jumblebowl,
-  Ladles,
-  Stick,
-  Penstand,
-  PlantHolder,
-  ShellBirdfeeder,
-  Soaptry,
-  Soupbowl,
-  BowlTwenty,
-  BowlTwentyone,
-  BowlTwentyTwo,
-  BowlTwentyThree,
-  BowlTwentyFour,
-  BowlTwentyFive,
-  BowlTwentySix,
-  BowlTwentySeven,
-  BowlTwentyEight,
-  BowlTwentyNine,
-  BowlThirty,
-  BowlThirtyone,
-  BowlThirtyTwo,
-  BowlThirtyThree,
-  BowlThirtyFour,
-  BowlThirtyFive,
+  Bowl,                    // Ice Cream Oval Cup
+  ComboPack,               // Combo Pack
+  Icecreambowlround,       // Ice Cream Bowl Round
+  Roundbowlpolished,       // Round Bowl Polished
+  Rawpenstand,             // Raw Pen Stand
+  Roundbowlsetpolished,    // Round Bowl Set Polished
+  Icecreamovalcups,        // Ice Cream Oval Cups (Pack of 10)
+  Ovalpolishedbowl,        // Oval Polished Bowl
+  Snackbowlwithscoop,      // Snack Bowl with Scoop
+  OvalGlossybowlset,       // Oval Glossy Bowl Set
+  Laddle,                  // Laddle
+  Miniteacup,              // Mini Tea Cup (Pack of 4)
+  DesertBowlWithScoop,     // Dessert Bowl with Scoop
+  Rawshellteacup,          // Raw Shell Tea Cup
+  Rawshellround,           // Raw Shell Round
+  Rawshelloval,            // Raw Shell Oval
+  Matfinishjumbobowl       // Mat Finish Jumbo Bowl
 };
 
 
 const products = [
-  { id: 1, title: "Bowl 1", price: 200, category: "Kitchen & Dining", img: Bowl },
-  { id: 2, title: "Bowl 2", price: 210, category: "Kitchen & Dining", img: Coffeecup },
-  { id: 3, title: "Bowl 3", price: 220, category: "Kitchen & Dining", img: Juicecup },
-  { id: 4, title: "Bowl 4", price: 230, category: "Kitchen & Dining", img: Payasacup },
-  { id: 5, title: "Bowl 5", price: 240, category: "Kitchen & Dining", img: Bowlone },
-  { id: 6, title: "Bowl 6", price: 250, category: "Kitchen & Dining", img: Bowltwo },
-  { id: 7, title: "Bowl 7", price: 260, category: "Kitchen & Dining", img: Bowlthree },
-  { id: 8, title: "Bowl 8", price: 270, category: "Kitchen & Dining", img: Bowlwithbase },
-  { id: 9, title: "Bowl 9", price: 280, category: "Home Decor", img: Candleholder },
-  { id: 10, title: "Bowl 10", price: 290, category: "Garden & Outdoor", img: CoirBirdnest },
-  { id: 11, title: "Bowl 11", price: 300, category: "Storage", img: Jar },
-  { id: 12, title: "Bowl 12", price: 310, category: "Kitchen & Dining", img: Jumblebowl },
-  { id: 13, title: "Bowl 13", price: 320, category: "Kitchen & Dining", img: Ladles },
-  { id: 14, title: "Bowl 14", price: 330, category: "Kitchen & Dining", img: Stick },
-  { id: 15, title: "Bowl 15", price: 340, category: "Office & Stationery", img: Penstand },
-  { id: 16, title: "Bowl 16", price: 350, category: "Garden & Outdoor", img: PlantHolder },
-  { id: 17, title: "Bowl 17", price: 360, category: "Garden & Outdoor", img: ShellBirdfeeder },
-  { id: 18, title: "Bowl 18", price: 370, category: "Bathroom", img: Soaptry },
-  { id: 19, title: "Bowl 19", price: 380, category: "Kitchen & Dining", img: Soupbowl },
-  { id: 20, title: "Bowl 20", price: 390, category: "Kitchen & Dining", img: BowlTwenty },
-  { id: 21, title: "Bowl 21", price: 400, category: "Kitchen & Dining", img: BowlTwentyone },
-  { id: 22, title: "Bowl 22", price: 410, category: "Kitchen & Dining", img: BowlTwentyTwo },
-  { id: 23, title: "Bowl 23", price: 420, category: "Kitchen & Dining", img: BowlTwentyThree },
-  { id: 24, title: "Bowl 24", price: 430, category: "Kitchen & Dining", img: BowlTwentyFour },
-  { id: 25, title: "Bowl 25", price: 440, category: "Kitchen & Dining", img: BowlTwentyFive },
-  { id: 26, title: "Bowl 26", price: 450, category: "Kitchen & Dining", img: BowlTwentySix },
-  { id: 27, title: "Bowl 27", price: 460, category: "Kitchen & Dining", img: BowlTwentySeven },
-  { id: 28, title: "Bowl 28", price: 470, category: "Kitchen & Dining", img: BowlTwentyEight },
-  { id: 29, title: "Bowl 29", price: 480, category: "Kitchen & Dining", img: BowlTwentyNine },
-  { id: 30, title: "Bowl 30", price: 490, category: "Kitchen & Dining", img: BowlThirty },
-  { id: 31, title: "Bowl 31", price: 500, category: "Kitchen & Dining", img: BowlThirtyone },
-  { id: 32, title: "Bowl 32", price: 510, category: "Kitchen & Dining", img: BowlThirtyTwo },
-  { id: 33, title: "Bowl 33", price: 520, category: "Kitchen & Dining", img: BowlThirtyThree },
-  { id: 34, title: "Bowl 34", price: 530, category: "Kitchen & Dining", img: BowlThirtyFour },
-  { id: 35, title: "Bowl 35", price: 540, category: "Kitchen & Dining", img: BowlThirtyFive },
+  { id: 1, title: "Ice Cream Oval Cup", price: 18, category: "Kitchen & Dining", img: Bowl, featured: true },
+
+  { id: 2, title: "Combo Pack (Wine Cup, Round Dessert Cup, Oval Bowl, Pen Stand)", 
+    price: 499, category: "Kitchen & Dining", img: ComboPack },
+
+  { id: 3, title: "Ice Cream Bowl Round", price: 25, category: "Kitchen & Dining", img: Icecreambowlround },
+
+  { id: 4, title: "Round Bowl Polished", price: 70, category: "Kitchen & Dining", img: Roundbowlpolished },
+
+  { id: 5, title: "Raw Pen Stand", price: 90, category: "Office & Stationery", img: Rawpenstand },
+
+  { id: 6, title: "Round Bowl Set Polished", price: 130, category: "Kitchen & Dining", img: Roundbowlsetpolished },
+
+  { id: 7, title: "Ice Cream Oval Cups (Pack of 10)", price: 150, category: "Kitchen & Dining", img: Icecreamovalcups },
+
+  { id: 8, title: "Oval Polished Bowl", price: 25, category: "Kitchen & Dining", img: Ovalpolishedbowl },
+
+  { id: 9, title: "Snack Bowl With Scoop", price: 150, category: "Kitchen & Dining", img: Snackbowlwithscoop },
+
+  { id: 10, title: "Oval Glossy Bowl Set", price: 45, category: "Kitchen & Dining", img: OvalGlossybowlset },
+
+  { id: 11, title: "Laddle", price: 99, category: "Kitchen & Dining", img: Laddle },
+
+  { id: 12, title: "Mini Tea Cup (Pack of 4)", price: 299, category: "Kitchen & Dining", img: Miniteacup },
+
+  { id: 13, title: "Dessert Bowl With Scoop", price: 150, category: "Kitchen & Dining", img: DesertBowlWithScoop },
+
+  { id: 14, title: "Raw Shell Tea Cup", price: 20, category: "Kitchen & Dining", img: Rawshellteacup },
+
+  { id: 15, title: "Raw Shell Round", price: 15, category: "Kitchen & Dining", img: Rawshellround },
+
+  { id: 16, title: "Raw Shell Oval", price: 10, category: "Kitchen & Dining", img: Rawshelloval },
+
+  { id: 17, title: "Mat Finish Jumbo Bowl", price: 70, category: "Kitchen & Dining", img: Matfinishjumbobowl }
 ];
 
 
